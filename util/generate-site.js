@@ -28,7 +28,9 @@ const copyFile = fileContent =>{
       resolve({
         ok:true,
         message:'File Copied'
-      })
-    })
-  })
-}
+      });
+    });
+  });
+};
+
+module.exports = {writeFile, copyFile };
